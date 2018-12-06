@@ -6,7 +6,9 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>org.clearing.workflow</groupId>
-  <artifactId>workflow-autoflow</artifactId>
+  <artifactId>workflow-dispatcher</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
+  <name>清結算接口模块</name>
+  <description>清结算流程调度功能模块</description>
 </project>

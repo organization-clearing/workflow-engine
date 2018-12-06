@@ -11,14 +11,20 @@
 		<spring-version>4.3.10.RELEASE</spring-version>
 	</properties>
 
-	<dependencies>
-		<!-- Spring版本控制器 -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<version>${spring-version}</version>
-		</dependency>
-	</dependencies>
+	<dependencyManagement>
+		<dependencies>
+			<!-- Spring版本控制器 -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+				<version>${spring-version}</version>
+			</dependency>
+		</dependencies>
+		
+		
+		
+	</dependencyManagement>
+
 
 	<build>
 		<plugins>
