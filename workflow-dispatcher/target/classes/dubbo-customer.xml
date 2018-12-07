@@ -6,20 +6,17 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd        
     http://code.alibabatech.com/schema/dubbo        
     http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+	
     
 	<!-- 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 -->
     <dubbo:application name="workflow-dispatcher"  />    
     
     <!-- 使用zookeeper注册中心暴露发现服务地址 -->
-    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181" />
+    <dubbo:registry address="zookeeper://127.0.0.1:2181"/>
     
-    <!-- 生成远程服务代理，可以和本地bean一样使用(和spring一样的用法)demoService -->
-    <dubbo:reference id="dubboServer" interface="org.clearing.frame.server.BaseServer"/>
+    <!-- 订阅服务 -->
+    <dubbo:reference id="rpcServer" interface="org.clearing.frame.rpc.server.RPCServer"/>
     
-    <!-- 
-    provider的配置
-    <dubbo:service interface="org.clearing.frame.server.BaseServer" protocol="dubbo" ref="dubboServer" /> 
-    -->
-    
+
     
 </beans>
