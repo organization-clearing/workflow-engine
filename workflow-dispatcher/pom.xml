@@ -24,6 +24,21 @@
 			<artifactId>spring-context</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.mchange</groupId>
+			<artifactId>c3p0</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc7</artifactId>
+		</dependency>
+
 		<!-- 项目间依赖 -->
 		<dependency>
 			<groupId>org.clearing</groupId>
@@ -37,8 +52,8 @@
 			<version>${project-version}</version>
 		</dependency>
 
-		<!-- 项目依赖 -->
 
+		<!-- 项目依赖 -->
 
 	</dependencies>
 
