@@ -10,9 +10,10 @@
 	<!-- 引入属性文件 -->
 	<context:property-placeholder location="classpath:config.properties"/>
 	
+	<import resource="classpath:spring-dataSource.xml"/>
 	<import resource="classpath:spring-mybatis.xml"/>
 	<import resource="classpath:dubbo-customer.xml"/>
-	<import resource="classpath:spring-dataSource.xml"/>
+	
 	
 	
 </beans>
